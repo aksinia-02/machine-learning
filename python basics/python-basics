@@ -1,0 +1,296 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "c9437cef",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "float"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = 42\n",
+    "b = a/5\n",
+    "type(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "f6c986a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 1.34, 2, 'world']\n"
+     ]
+    }
+   ],
+   "source": [
+    "list = [1, \"hello\", 2, \"world\"]\n",
+    "listCopy = list\n",
+    "listCopy[1] = 1.34\n",
+    "print(list)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "f604ebe3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[['Douglas Adams', 'Isaac Asimov', 'Terry Pratchett'], ['book1', 'book2', 'book3']]\n",
+      "is equal: True\n",
+      "[['Douglas Adams', 'Isaac Asimov', 'Terry Pratchett'], ['book1', 1, 'book3']]\n",
+      "[['Douglas Adams', 'Isaac Asimov', 'Terry Pratchett'], ['book1', 'book2', 'book3']]\n",
+      "is equal: False\n"
+     ]
+    }
+   ],
+   "source": [
+    "authors = [\"Douglas Adams\", \"Isaac Asimov\", \"Terry Pratchett\"]\n",
+    "books = [\"book1\", \"book2\", \"book3\"]\n",
+    "recommendations = [authors, books]\n",
+    "print(recommendations)\n",
+    "\n",
+    "import copy\n",
+    "mycopy = copy.deepcopy(recommendations)\n",
+    "print(\"is equal: \" + str(mycopy == recommendations))\n",
+    "mycopy[1][1] = 1\n",
+    "print(mycopy)\n",
+    "print(recommendations)\n",
+    "print(\"is equal: \" + str(mycopy == recommendations))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "c2f29110",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-2, 1, 1.4, 3.5]\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "list1 = [1, -2, 3.5, 1.4]\n",
+    "sortList = list1.sort()\n",
+    "print(list1)\n",
+    "print(sortList)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "a7ae748d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True True True False\n"
+     ]
+    }
+   ],
+   "source": [
+    "l1 = [1, 2, 3]\n",
+    "l2 = l1\n",
+    "l3 = [1, 2, 3]\n",
+    "print(l1 == l2, l1 == l3, l1 is l2, l1 is l3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "5cedad12",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "deque([2, 3, 4, 5, 6, 7, 8, 9, 10, 11], maxlen=10)\n"
+     ]
+    }
+   ],
+   "source": [
+    "from collections import deque\n",
+    "store = deque(maxlen = 10)\n",
+    "for i in range(12): \n",
+    "    store.append(i)\n",
+    "print(store)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "a22af3b9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(3, 'text')\n"
+     ]
+    }
+   ],
+   "source": [
+    "t = (3, 'text')\n",
+    "print(t)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "45c885f0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2024-7-7T14:45:4\n",
+      "Help on function mystemp in module __main__:\n",
+      "\n",
+      "mystemp()\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "def mystemp():\n",
+    "    import time\n",
+    "    \n",
+    "    today = time.localtime()\n",
+    "    \n",
+    "    InternDate = str(today.tm_year) + '-' + str(today.tm_mon) + '-' + str(today.tm_mday)\n",
+    "    InternTime = str(today.tm_hour) + ':' + str(today.tm_min) + ':' + str(today.tm_sec)\n",
+    "    InternDateFormat = InternDate + 'T' + InternTime\n",
+    "    return InternDateFormat\n",
+    "\n",
+    "print(mystemp())\n",
+    "help(mystemp)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "7f968612",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "(1, 0.8414709848078965)"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "from math import sin\n",
+    "def wave(t = 1):\n",
+    "    return t, sin(t)\n",
+    "\n",
+    "wave()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "0f38174a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.1411200080598672\n",
+      "3\n",
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "x, y = wave(3)\n",
+    "print(y)\n",
+    "print(x)\n",
+    "\n",
+    "t = (1, 2, 3)\n",
+    "a, b, c = t\n",
+    "print(a)\n",
+    "print(b)\n",
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "310d8462",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 2 3\n"
+     ]
+    }
+   ],
+   "source": [
+    "def fun(x, y, z):\n",
+    "    print(x, y, z)\n",
+    "\n",
+    "t = (1, 2, 3)\n",
+    "fun(*t)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
