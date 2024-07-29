@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc0966ca-f939-45af-bf09-880d8e99f6eb" name="Changes" comment="added bayes classifier for cardinal scales">
-      <change afterPath="$PROJECT_DIR$/bayes classifier/wine.csv" afterDir="false" />
-    </list>
+    <list default="true" id="bc0966ca-f939-45af-bf09-880d8e99f6eb" name="Changes" comment="linear models and lazy learning" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721580294373</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="linear models and lazy learning">
+      <created>1722247585664</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722247585664</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +92,7 @@
     <MESSAGE value="first naive classifier." />
     <MESSAGE value="added class for naive bayes nominal classificator" />
     <MESSAGE value="added bayes classifier for cardinal scales" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bayes classifier for cardinal scales" />
+    <MESSAGE value="linear models and lazy learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="linear models and lazy learning" />
   </component>
 </project>
