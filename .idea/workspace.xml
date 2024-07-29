@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc0966ca-f939-45af-bf09-880d8e99f6eb" name="Changes" comment="added class for naive bayes nominal classificator">
+    <list default="true" id="bc0966ca-f939-45af-bf09-880d8e99f6eb" name="Changes" comment="added bayes classifier for cardinal scales">
       <change afterPath="$PROJECT_DIR$/bayes classifier/wine.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bayes classifier/bayes classifier.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/bayes classifier/bayes classifier.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1721577848015</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added bayes classifier for cardinal scales">
+      <created>1721580294373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721580294373</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -80,6 +86,7 @@
     <MESSAGE value="started chapter 4 &quot;bayes classifier&quot;." />
     <MESSAGE value="first naive classifier." />
     <MESSAGE value="added class for naive bayes nominal classificator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class for naive bayes nominal classificator" />
+    <MESSAGE value="added bayes classifier for cardinal scales" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bayes classifier for cardinal scales" />
   </component>
 </project>
